@@ -20,8 +20,8 @@ const ProductCard = ({ image, title, price, percent, priceOld }: ProductCardProp
       <TitleCard>{title}</TitleCard>
 
       <PriceContainer>
+        {priceOld && <PriceOldCard>{priceOld.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</PriceOldCard>}
         <PriceCard>{price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</PriceCard>
-        {priceOld && <PriceOldCard>{priceOld}</PriceOldCard>}
       </PriceContainer>
 
       <ButtonCard variant="solid">Ver oferta</ButtonCard>

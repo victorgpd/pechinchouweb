@@ -81,9 +81,9 @@ export const TitleCard = styled.h3`
 export const PriceContainer = styled.div`
   width: 100%;
 
-  gap: 15px;
   display: flex;
-  align-items: center;
+  flex-flow: column;
+  /* align-items: center; */
 `;
 
 export const PriceCard = styled.span`
@@ -97,7 +97,7 @@ export const PriceOldCard = styled.span`
   text-decoration: line-through;
 
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
 `;
 
 export const ButtonCard = styled(Button)`
