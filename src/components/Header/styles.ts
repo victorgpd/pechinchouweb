@@ -9,7 +9,8 @@ export const Container = styled.header`
   justify-content: space-between;
 
   width: 100%;
-  height: 80px;
+  min-height: 80px;
+  max-height: 80px;
 
   padding: 0 24px;
 
@@ -44,6 +45,20 @@ export const Item = styled.li`
   font-weight: 400;
 
   cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: #ed6b16;
+
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 110%;
+  }
 `;
 
 export const ContainerSearch = styled.div`
