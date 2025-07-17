@@ -89,7 +89,7 @@ export const PriceContainer = styled.div`
 export const PriceCard = styled.span`
   color: #d5410b;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
 `;
 
 export const PriceOldCard = styled.span`
@@ -97,7 +97,7 @@ export const PriceOldCard = styled.span`
   text-decoration: line-through;
 
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
 `;
 
 export const ButtonCard = styled(Button)`
