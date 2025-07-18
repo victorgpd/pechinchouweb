@@ -2,8 +2,7 @@ import { Button } from "antd";
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  /* width: 160px; */
-  height: 290px;
+  height: 315px;
 
   background-color: white;
 
