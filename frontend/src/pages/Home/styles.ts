@@ -39,7 +39,7 @@ export const SloganBanner = styled.p`
 `;
 
 export const ProductsSection = styled.section`
-  padding: 16px 30px;
+  padding: 35px 30px;
   padding-bottom: 40px;
 
   gap: 50px;
