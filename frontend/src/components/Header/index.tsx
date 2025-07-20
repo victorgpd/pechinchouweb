@@ -1,5 +1,7 @@
 import { Dropdown, type MenuProps } from "antd";
-import { Container, ContainerNav, ContainerSearch, InputSearch, Item, List, Logo, SearchButton } from "./styles";
+import { Container, ContainerLogo, ContainerNav, ContainerSearch, InputSearch, Item, List, Logo, SearchButton, Simbolo } from "./styles";
+import { useNavigate } from "react-router-dom";
+import { RoutesEnum } from "../../enums/enums";
 
 const items: MenuProps["items"] = [
   {
@@ -36,11 +38,16 @@ const items: MenuProps["items"] = [
 ];
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <Container>
-      <Logo>
-        Descon<span>tou</span>
-      </Logo>
+      <ContainerLogo onClick={() => navigate(RoutesEnum.Home)}>
+        <Simbolo src="./icone.png" alt="Logo da aplicação" />
+        <Logo>
+          Pechincha<span>Web</span>
+        </Logo>
+      </ContainerLogo>
 
       <ContainerNav>
         <List>

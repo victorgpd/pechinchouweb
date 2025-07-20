@@ -3,6 +3,8 @@ import type { RouteObject } from "react-router-dom";
 
 import Screen from "../components/Screen";
 import Home from "../pages/Home";
+import PublicOnlyRoute from "../components/PublicOnlyRoute";
+import Login from "../pages/Login";
 
 export const screensRoutes: RouteObject[] = [
   {
@@ -17,10 +19,9 @@ export const screensRoutes: RouteObject[] = [
       {
         path: RoutesEnum.Login,
         element: (
-          <div>Login</div>
-          //   <PublicOnlyRoute>
-          // <Login />
-          //   </PublicOnlyRoute>
+          <PublicOnlyRoute>
+            <Login />
+          </PublicOnlyRoute>
         ),
       },
       {

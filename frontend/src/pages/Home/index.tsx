@@ -1,5 +1,5 @@
 import { Input } from "antd";
-import { Banner, LimitedContainer, ProductsSection, SloganBanner, TitleBanner } from "./styles";
+import { Banner, CaterogyContainer, LimitedContainer, ProductsSection, SloganBanner, TitleBanner } from "./styles";
 
 import ProductCard from "../../components/ProductCard";
 import Carousel from "../../components/Carousel";
@@ -34,7 +34,25 @@ const Home = () => {
           ))}
         </Carousel>
 
-        <Carousel title="Categorias">Eletrônicos</Carousel>
+        <Carousel title="Categorias" slidesCategory>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+          <CaterogyContainer>Eletrônicos</CaterogyContainer>
+        </Carousel>
 
         <Carousel title="Produtos para o seu bebê">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((i) => (

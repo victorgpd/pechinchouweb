@@ -40,10 +40,23 @@ export const SloganBanner = styled.p`
 
 export const ProductsSection = styled.section`
   padding: 35px 30px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 
-  gap: 50px;
+  gap: 60px;
   display: flex;
   flex-flow: column;
+  align-items: center;
+`;
+
+export const CaterogyContainer = styled.p`
+  width: 110px;
+  padding: 6px 12px;
+  border-radius: 6px;
+
+  color: white;
+  background-color: #ed6a16;
+
+  display: flex;
+  justify-content: center;
   align-items: center;
 `;

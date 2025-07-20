@@ -12,17 +12,33 @@ export const Container = styled.header`
   min-height: 80px;
   max-height: 80px;
 
-  padding: 0 24px;
+  padding: 16px 24px;
 
   background-color: #f9f8f9;
 `;
 
+export const ContainerLogo = styled.div`
+  height: 100%;
+
+  gap: 6px;
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+`;
+
 export const Logo = styled.h1`
-  font-size: 34px;
+  font-size: 30px;
+  font-weight: 600;
 
   & span {
+    font-size: 26px;
     color: #ed6b16;
   }
+`;
+
+export const Simbolo = styled.img`
+  height: 100%;
 `;
 
 export const ContainerNav = styled.nav`
